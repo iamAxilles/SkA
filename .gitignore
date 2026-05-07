@@ -1,3 +1,6 @@
 aenv/
 aenv/
 __pycache__/
+aenv/
+__pycache__
+.fastapicloud
