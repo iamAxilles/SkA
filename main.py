@@ -6,9 +6,9 @@ from fastapi.staticfiles import StaticFiles
 import requests, json
 
 ##from airwater import run
-# import idvehi
-# import jsonCars
-# import imit
+import idvehi
+import jsonCars
+import imit
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -18,9 +18,9 @@ from pydantic import BaseModel
 from datetime import datetime
 
 app = FastAPI()
-# app.include_router(imit.encar)
-# app.include_router(jsonCars.api)
-# app.include_router(idvehi.vehi)
+app.include_router(imit.encar)
+app.include_router(jsonCars.api)
+app.include_router(idvehi.vehi)
  
 @app.get('/hello')
 def hello():
